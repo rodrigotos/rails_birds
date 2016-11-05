@@ -1,0 +1,11 @@
+<h1 class="text-center">Welcomme to rails, birds</h1>
+<section class="chirps">
+  <% @chirps.each do |ch| %>
+    <article class="chirp">
+      <ul>
+        <li><%= ch.user.first_name %></li>
+      </ul>
+      <%= ch.body %>
+    </article>
+  <% end %>
+</section>
